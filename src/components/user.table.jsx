@@ -168,7 +168,7 @@ export default function UsersTable() {
                 type="text"
                 id="user-filter"
                 name="userFilter"
-                placeholder="Фильтр по ФИО, полу, телефону, email, городу или стране"
+                placeholder="Фильтр по ФИ, полу, телефону, email, городу или стране"
                 value={filterQuery}
                 onChange={e => setFilterQuery(e.target.value)}
                 className="filter-input"
