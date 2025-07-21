@@ -1,0 +1,164 @@
+:root {
+    --bg-dark: #1e1b2f;
+    --bg-darker: #181628;
+    --text-light: #d1d5db;
+    --border-color: #3a3753;
+    --highlight: #4f46e5;
+    --accent-light: #3a3753;
+    --divider-color: rgba(255, 255, 255, 0.1);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: var(--bg-darker);
+    color: var(--text-light);
+    padding: 1.5rem;
+    border-radius: 30px;
+    width: 90%;
+    max-width: 400px; /* Было 360px — теперь шире */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border-color);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.modal-avatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 2px solid var(--highlight);
+}
+
+.modal-name {
+    margin-top: 0.75rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.modal-info-block {
+    text-align: left;
+    margin-top: 0.75rem;
+    width: 100%;
+}
+
+.modal-info-item {
+    padding: 0.25rem 0;
+}
+
+.modal-divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--divider-color);
+    margin: 0;
+}
+
+.modal-contact,
+.modal-address {
+    margin: 0;
+}
+
+.modal-contact {
+    margin-bottom: 0.6rem;
+}
+
+.modal-address {
+    margin-top: 0.75rem;
+    font-style: italic;
+    color: #a3a3a3;
+    font-size: 0.75rem;
+}
+
+.modal-close-btn {
+    margin-top: 1.25rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--bg-dark);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--text-light);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.modal-close-btn:hover:not(:disabled) {
+    background-color: var(--accent-light, #3a3753);
+    color: white;
+}
+
+.modal-close-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 560px) {
+    .modal-content {
+        max-width: 90vw;
+        padding: 1.25rem;
+        border-radius: 24px;
+    }
+
+    .modal-avatar {
+        width: 60px;
+        height: 60px;
+    }
+
+    .modal-name {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .modal-info-item {
+        padding: 0.2rem 0;
+    }
+
+    .modal-contact {
+        margin-bottom: 0.4rem;
+    }
+
+    .modal-close-btn {
+        font-size: 13px;
+        padding: 0.4rem 0.8rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 1rem;
+        border-radius: 20px;
+    }
+
+    .modal-avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .modal-name {
+        font-size: 0.9rem;
+    }
+
+    .modal-info-item p,
+    .modal-contact p,
+    .modal-address {
+        font-size: 0.7rem;
+    }
+
+    .modal-close-btn {
+        font-size: 12px;
+        padding: 0.3rem 0.6rem;
+    }
+}
