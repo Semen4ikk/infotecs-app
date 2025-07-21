@@ -11,6 +11,7 @@ export default function AppRoutes() {
         <Routes>
 
             <Route path="/users" element={<UsersTable />} />
+            <Route path="/public" element={<NotFoundPage />} />
             <Route path="*" element={<NotFoundPage />} />
         </Routes>
     );
