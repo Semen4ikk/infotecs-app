@@ -141,6 +141,8 @@ th:last-child .resizer {
 }
 
 @media (max-width: 600px) {
+    .table-wrapper {
+        overflow-x: auto;}
     th, td {
         font-size: 12px;
         padding: 8px 6px;
