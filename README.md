@@ -1,12 +1,41 @@
-# React + Vite
+# Infotecs-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+https://semen4ikk.github.io/infotecs-app/
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Таблица содержит поля:
+- Имя
+- Фамилия
+- Девичья фамилия
+- Возраст
+- Пол
+- Телефон
+- Эл. почта
+- Город
+- Страна
 
-## Expanding the ESLint configuration
+![img.png](image/img.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Модальное окно:
+![img.png](image/img1.png)
+
+## Фильтрация по:
+- Фамилия
+- Имя
+- Пол
+- Телефон
+- Город
+- Страна
+
+![img_1.png](image/img_1.png)
+
+## Сортировка по:
+- Возростанию
+- Убыванию
+- По умолчанию
+
+## Можно менять размер столбиков
+Однако минимальная ширина 50 px 
+
+## Ошибка 404(Not Fount)
+![img_2.png](image/img_2.png)
